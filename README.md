@@ -18,7 +18,7 @@ Each module has its own directory with Terraform files and examples.
 
 ```hcl
 module "aks" {
-  source = "github.com/izz-linux/terraform-modules//azure-aks"
+  source = "github.com/izz-linux/terraform-modules//azure-aks?ref=v0.2.0"
 
   cluster_name        = "my-aks-cluster"
   resource_group_name = "my-resource-group"
@@ -35,7 +35,7 @@ module "aks" {
 
 ```hcl
 module "gke" {
-  source = "github.com/izz-linux/terraform-modules//gcp-gke"
+  source = "github.com/izz-linux/terraform-modules//gcp-gke?ref=v0.2.0"
 
   cluster_name = "my-gke-cluster"
   project_id   = "my-gcp-project"
