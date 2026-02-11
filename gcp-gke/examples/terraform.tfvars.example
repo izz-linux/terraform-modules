@@ -1,0 +1,19 @@
+# GCP Project ID (required)
+project_id = "my-gcp-project"
+
+# Cluster configuration
+cluster_name = "my-gke-cluster"
+region       = "us-central1"
+
+# Optional: Specify Kubernetes version
+# kubernetes_version = "1.30"
+
+# Labels for resources
+labels = {
+  environment = "dev"
+  project     = "example"
+  managed_by  = "terraform"
+}
+
+# Note: To check available GKE versions, run:
+# gcloud container get-server-config --region=us-central1 --format="yaml(validMasterVersions)"
