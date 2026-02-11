@@ -13,7 +13,7 @@ A Terraform module for deploying Azure Kubernetes Service (AKS) clusters.
 
 ```hcl
 module "aks" {
-  source = "github.com/izz-linux/terraform-modules//azure-aks"
+  source = "github.com/izz-linux/terraform-modules//azure-aks?ref=0.2.0"
 
   cluster_name        = "my-aks-cluster"
   resource_group_name = "my-resource-group"
