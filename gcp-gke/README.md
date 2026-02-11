@@ -20,7 +20,7 @@ This module creates a Google Kubernetes Engine (GKE) cluster with a configurable
 
 ```hcl
 module "gke" {
-  source = "github.com/izz-linux/terraform-modules//gcp-gke"
+  source = "github.com/izz-linux/terraform-modules//gcp-gke?ref=v0.2.0"
 
   cluster_name = "my-gke-cluster"
   project_id   = "my-gcp-project"
